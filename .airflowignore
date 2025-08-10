@@ -1,1 +1,3 @@
-dags/idle_sql_connection_test.py
+/opt/airflow/dags/idle_sql_connection_test.py
+/opt/airflow/dags/cloud_sql_connect.py
+/opt/airflow/dags/mssql_utils.py
