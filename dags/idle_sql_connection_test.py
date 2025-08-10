@@ -15,7 +15,7 @@ from airflow.models import Variable
     start_date=datetime.today() - timedelta(days=1),
     tags=["sql_idle_connections"])
 def idle_sql_connection():
-    connection_string = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=34.45.149.117;DATABASE=ny_taxi;UID=sqlserver;PWD=Server#Sql2017"
+    connection_string = "DRIVER={ODBC Driver 17 for SQL Server};SERVER=;DATABASE=ny_taxi;UID=;PWD="
     pyodbc.pooling = False
     cnxn = pyodbc.connect(connection_string)
     
