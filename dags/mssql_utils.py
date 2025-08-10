@@ -5,7 +5,6 @@ import pandas as pd
 from sqlalchemy.engine import URL
 import pyodbc
 
-
 @dataclass
 class MsSQLConnect:
     
