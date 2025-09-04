@@ -12,8 +12,8 @@ def create_table(conn):
                     cluster VARCHAR(20) PRIMARY KEY,
                     full_last_bkp_date VARCHAR(20) NOT NULL,
                     full_last_bkp_status VARCHAR(20) NOT NULL,
-                    incr_bkp_last_ts BIGINT default 0000000000,
-                    incr_bkp INTEGER default 0,
+                    incr_bkp_last_ts BIGINT NOT NULL default 0000000000,
+                    incr_bkp_i INTEGER NOT NULL default 0,
                     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 );
             """
