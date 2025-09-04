@@ -74,6 +74,12 @@ services:
 
   airflow-scheduler:
     <<: *airflow-common
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+        reservations:
+          memory: 1g
     command: scheduler
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
