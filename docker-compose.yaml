@@ -135,6 +135,7 @@ services:
         fi
         mkdir -p /opts/airflow/{logs,dags,plugins,config}
         chown -R "${AIRFLOW_UID}:0" /opt/airflow/{logs,dags,plugins,config}
+        python3 /opt/airflow/plugins/backup_table_creation.py
         exec /entrypoint airflow version
     environment:
       <<: *airflow-common-env
