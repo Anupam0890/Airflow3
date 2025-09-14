@@ -5,6 +5,7 @@
 # apache-airflow-providers-fab[common.compat]==2.0.2
 # apache-airflow-providers-apache-kafka==1.9.0
 # apache-airflow-providers-microsoft-mssql==4.3.2
+apache-airflow-providers-google==10.24.0
 
 # astronomer-cosmos==1.10.1
 
