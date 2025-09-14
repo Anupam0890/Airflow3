@@ -146,6 +146,7 @@ with DAG(
             write_disposition="WRITE_TRUNCATE",
             create_disposition="CREATE_IF_NEEDED",
             allow_large_results=True,
+            gcp_conn_id=GCP_CONN_ID
         )
 
         run_bq_query_job #>> run_cloud_service_dbt
